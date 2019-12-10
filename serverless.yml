@@ -1,0 +1,30 @@
+service: serverless
+
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+  apiName: GenommaLab
+  vpc:
+    securityGroupsdIds:
+      - sg-77b00f2e
+    subnetsIds:
+      - subnet-e2a134dc
+      - subnet-4b317317
+  
+
+#  exclude:
+#    - exclude-me.js
+#    - exclude-me-dir/**
+
+functions:
+  GetAllDataTransactions:
+    handler: handler.GetAllDataTransactions
+    events:
+      - http:
+          path: genommalab/supplychain/getalldatatransactions
+          method: get
+
+
