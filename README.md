@@ -3,7 +3,7 @@
 ## Proyecto GenommaLab Cloud
 
 ## Descripción
-Proyecto que consiste en sentar las reglas para homogenizar: codigo, herramientas y documentación para optimizar, agilizar y reducir los procesos en Genomma Lab, muchos de los cuales estarán en la nube.
+El proyecto de supply chain tiene como objetivo cumplir con lo predictivo de un proceso en el que los datos de adquisición, producción y distribución de los bienes de Genomma se gestionan. Los datos van a estar almacenados en la nube con el servicio de AWS mientras que a través de la webapp se van a verificar y subir.
 
 ## Tabla de Contenido
 * Entorno de Programación
